@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.Ivanov_Practika">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Cinema Search"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Ivanov_Practika"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.example.Ivanov_Practika.newtheatre"
+            android:exported="false"
+            android:label="@string/newtheatre">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.Ivanov_Practika.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.Ivanov_Practika.newfilm"
+            android:exported="false"
+            android:label="@string/newfilm">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.Ivanov_Practika.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.Ivanov_Practika.films"
+            android:exported="false"
+            android:label="@string/films">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.Ivanov_Practika.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.Ivanov_Practika.theatre"
+            android:exported="false"
+            android:label="@string/theatres">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.Ivanov_Practika.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.Ivanov_Practika.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

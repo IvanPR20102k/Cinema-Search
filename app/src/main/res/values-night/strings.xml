@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="theatres">Театры</string>
+    <string name="films">Фильмы</string>
+    <string name="newfilm">Добавить фильм</string>
+</resources>
